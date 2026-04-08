@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inscripción — NetMaster Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">NET<span>MASTER</span> <span style="color:var(--muted);font-size:.9rem;">ACADEMY</span></a>
+    <div class="ms-auto">
+      <a href="index.html" class="btn-ghost-sm">
+        <i class="bi bi-arrow-left me-1"></i> Volver al inicio
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- FORMULARIO HERO -->
+<section id="form-hero">
+  <div class="container">
+    <div class="text-center mb-5 fade-up">
+      <div class="section-tag">// Comienza hoy</div>
+      <h1 class="section-title">Formulario de <span class="accent">Inscripción</span></h1>
+      <div class="divider-line mx-auto"></div>
+      <p class="section-sub mx-auto">
+        Completa el formulario y nuestro equipo te contacta en menos de 24 horas.
+      </p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <div class="form-wrap fade-up">
+
+          <!-- Alert de éxito -->
+          <div class="alert-success-custom" id="successAlert">
+            <i class="bi bi-check-circle me-2"></i>
+            ¡Inscripción enviada con éxito! Te contactaremos pronto.
+          </div>
+
+          <form action="https://formsubmit.co/shiara.padilla@campusucc.edu.co" method="POST" id="inscripcionForm">
+            <input type="hidden" name="_subject" value="Nueva inscripción — NetMaster Academy">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="">
+
+            <!-- BLOQUE 01 -->
+            <h5 class="form-section-title">01 / DATOS PERSONALES</h5>
+            <div class="row g-3 mb-4">
+              <div class="col-md-6">
+                <label class="form-label" for="nombres">Nombres y apellidos *</label>
+                <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Tu nombre completo" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="email">Correo electrónico *</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="tu@correo.com" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="telefono">Teléfono / WhatsApp *</label>
+                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="+57 300 000 0000" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="ciudad">Ciudad / Municipio *</label>
+                <input type="text" class="form-control" id="ciudad" name="ciudad" placeholder="Ej: Sincelejo" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="documento">Tipo de documento</label>
+                <select class="form-select" id="documento" name="tipo_documento">
+                  <option value="">Seleccionar</option>
+                  <option>Cédula de ciudadanía</option>
+                  <option>Tarjeta de identidad</option>
+                  <option>Pasaporte</option>
+                  <option>Cédula de extranjería</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="num_doc">Número de documento</label>
+                <input type="text" class="form-control" id="num_doc" name="numero_documento" placeholder="Opcional">
+              </div>
+            </div>
+
+            <hr class="form-divider">
+
+            <!-- BLOQUE 02 -->
+            <h5 class="form-section-title">02 / PERFIL DEL ASPIRANTE</h5>
+            <div class="row g-3 mb-4">
+              <div class="col-md-4">
+                <label class="form-label" for="edad">Rango de edad *</label>
+                <select class="form-select" id="edad" name="rango_edad" required>
+                  <option value="">Seleccionar</option>
+                  <option>15 – 18 años</option>
+                  <option>19 – 25 años</option>
+                  <option>26 – 35 años</option>
+                  <option>36 – 45 años</option>
+                  <option>Más de 45 años</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" for="ocupacion">Ocupación *</label>
+                <select class="form-select" id="ocupacion" name="ocupacion" required>
+                  <option value="">Seleccionar</option>
+                  <option>Estudiante</option>
+                  <option>Empleado</option>
+                  <option>Independiente / Freelancer</option>
+                  <option>Desempleado</option>
+                  <option>Empresario</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" for="nivel_actual">Nivel actual *</label>
+                <select class="form-select" id="nivel_actual" name="nivel_actual" required>
+                  <option value="">Seleccionar</option>
+                  <option>Principiante</option>
+                  <option>Intermedio</option>
+                  <option>Avanzado</option>
+                </select>
+              </div>
+            </div>
+
+            <hr class="form-divider">
+
+            <!-- BLOQUE 03 -->
+            <h5 class="form-section-title">03 / INTERESES ACADÉMICOS</h5>
+            <div class="row g-3 mb-4">
+              <div class="col-md-6">
+                <label class="form-label" for="linea">Línea de interés *</label>
+                <select class="form-select" id="linea" name="linea_interes" required>
+                  <option value="">Seleccionar</option>
+                  <option>Redes</option>
+                  <option>Desarrollo Web</option>
+                  <option>Ambas</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="curso_interes">Curso de interés *</label>
+                <select class="form-select" id="curso_interes" name="curso_interes" required>
+                  <option value="">Seleccionar</option>
+                  <optgroup label="Redes">
+                    <option>CCNA Fundamentos</option>
+                    <option>Seguridad en Redes</option>
+                    <option>Redes Cloud & AWS</option>
+                  </optgroup>
+                  <optgroup label="Desarrollo Web">
+                    <option>HTML, CSS & Bootstrap</option>
+                    <option>JavaScript & React</option>
+                    <option>Backend con Node.js</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="objetivo">Objetivo principal *</label>
+                <select class="form-select" id="objetivo" name="objetivo" required>
+                  <option value="">Seleccionar</option>
+                  <option>Conseguir empleo</option>
+                  <option>Emprendimiento</option>
+                  <option>Mejorar desempeño laboral</option>
+                  <option>Obtener certificación</option>
+                  <option>Aprendizaje personal</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="disponibilidad">Disponibilidad horaria *</label>
+                <select class="form-select" id="disponibilidad" name="disponibilidad_horaria" required>
+                  <option value="">Seleccionar</option>
+                  <option>Mañana (6am – 12m)</option>
+                  <option>Tarde (12m – 6pm)</option>
+                  <option>Noche (6pm – 10pm)</option>
+                  <option>Fines de semana</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="modalidad">Modalidad preferida *</label>
+                <select class="form-select" id="modalidad" name="modalidad_preferida" required>
+                  <option value="">Seleccionar</option>
+                  <option>Virtual</option>
+                  <option>Presencial</option>
+                  <option>Mixta</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="como_entero">¿Cómo se enteró de nosotros?</label>
+                <select class="form-select" id="como_entero" name="canal_adquisicion">
+                  <option value="">Seleccionar</option>
+                  <option>Redes sociales (Instagram / Facebook)</option>
+                  <option>Recomendación de un amigo</option>
+                  <option>Google</option>
+                  <option>Feria o evento</option>
+                  <option>WhatsApp</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="mensaje">Mensaje adicional (opcional)</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="3" placeholder="¿Tienes alguna pregunta o comentario?"></textarea>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="tratamiento" name="acepta_tratamiento_datos" required>
+                <label class="form-check-label" for="tratamiento">
+                  Acepto el <a href="#" style="color:var(--accent);">tratamiento de mis datos personales</a> de acuerdo con la Ley 1581 de 2012. *
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-submit" id="submitBtn">
+              <i class="bi bi-send me-2"></i> Enviar inscripción
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MINI FOOTER -->
+<footer class="mini-footer">
+  <div class="container text-center">
+    <a href="index.html" class="footer-brand" style="font-size:1.3rem;">NET<span>MASTER</span> ACADEMY</a>
+    <p style="margin-top:.5rem;">© 2025 NetMaster Academy. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

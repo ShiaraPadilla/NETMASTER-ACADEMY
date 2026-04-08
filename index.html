@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NetMaster Academy — Cursos Tech de Élite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,700;1,9..40,300&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#hero">NET<span>MASTER</span> <span style="color:var(--muted);font-size:.9rem;">ACADEMY</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#porque">¿Por qué?</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        <li class="nav-item ms-lg-2">
+          <a class="nav-link btn-cta-nav" href="formulario.html">Inscribirme</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="hero">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="hero-tag mono">// Formación tecnológica de élite</div>
+        <h1 class="hero-title">
+          PREPÁRATE<br>
+          <span class="line2">PARA EL FUTURO</span><br>
+          DIGITAL
+        </h1>
+        <p class="hero-sub">
+          Cursos intensivos de <strong style="color:var(--text)">Redes</strong> y
+          <strong style="color:var(--text)">Desarrollo Web</strong> diseñados para quienes quieren más que un diploma — quieren resultados reales.
+        </p>
+        <div class="hero-btns d-flex flex-wrap gap-3">
+          <a href="#cursos" class="btn btn-primary-cta">Ver Cursos <i class="bi bi-arrow-right ms-1"></i></a>
+          <a href="formulario.html" class="btn btn-ghost">Inscribirme ahora</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item"><div class="stat-num">+600</div><div class="stat-label">Egresados</div></div>
+          <div class="stat-item"><div class="stat-num">6</div><div class="stat-label">Cursos activos</div></div>
+          <div class="stat-item"><div class="stat-num">97%</div><div class="stat-label">Satisfacción</div></div>
+          <div class="stat-item"><div class="stat-num">4</div><div class="stat-label">Años de exp.</div></div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="terminal-box">
+          <div class="terminal-bar">
+            <div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div>
+            <span class="mono ms-2" style="font-size:.75rem;color:var(--muted)">netmaster ~ bash</span>
+          </div>
+          <div class="terminal-body">
+            <div class="t-line"><span class="cmd">$</span> <span class="out">ping netmaster.academy</span></div>
+            <div class="t-line" style="color:#28c840">Reply: 1ms — Conexión establecida ✓</div>
+            <div class="t-line mt-2"><span class="cmd">$</span> <span class="out">ls cursos/</span></div>
+            <div class="t-line"><span class="ok">redes/</span>       <span class="ok">desarrollo-web/</span></div>
+            <div class="t-line mt-2"><span class="cmd">$</span> <span class="out">cat redes/ccna-fundamentos.txt</span></div>
+            <div class="t-line" style="color:var(--accent)">→ Curso: CCNA Fundamentos</div>
+            <div class="t-line" style="color:var(--text)">   Nivel: Básico | Duración: 80h</div>
+            <div class="t-line" style="color:var(--text)">   Modalidad: Virtual | Precio: $350.000</div>
+            <div class="t-line" style="color:#febc2e">   Estado: PLAZAS DISPONIBLES</div>
+            <div class="t-line mt-2"><span class="cmd">$</span> <span class="out">enroll --curso="ccna" --nombre="Tú"</span></div>
+            <div class="t-line"><span class="ok">✓ Inscripción procesada.</span> Bienvenido.</div>
+            <div class="t-line mt-2"><span class="cmd">$</span> <span class="cursor"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- NOSOTROS -->
+<section id="nosotros">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-6 fade-up">
+        <div class="section-tag">// Quiénes somos</div>
+        <h2 class="section-title">NetMaster<br><span class="accent">Academy</span></h2>
+        <div class="divider-line"></div>
+        <p class="section-sub">
+          Somos una empresa de formación tecnológica comprometida con entregar habilidades reales, no solo teoría.
+          Desde 2021 formamos profesionales en Redes y Desarrollo Web con metodologías prácticas orientadas al mercado laboral.
+        </p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3 fade-up">
+        <div class="about-card">
+          <div class="about-icon"><i class="bi bi-bullseye"></i></div>
+          <h4>Misión</h4>
+          <p>Democratizar la educación tecnológica de calidad, formando profesionales con competencias técnicas aplicables, actitud resolutiva y valores éticos.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 fade-up">
+        <div class="about-card">
+          <div class="about-icon"><i class="bi bi-telescope"></i></div>
+          <h4>Visión</h4>
+          <p>Para 2029, ser la academia tech de referencia en Colombia, reconocida por la calidad de sus egresados e innovación pedagógica.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 fade-up">
+        <div class="about-card">
+          <div class="about-icon"><i class="bi bi-cpu"></i></div>
+          <h4>Metodología</h4>
+          <p>Aprendizaje basado en proyectos reales, laboratorios prácticos y acompañamiento personalizado. El 70% del tiempo lo pasas construyendo.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 fade-up">
+        <div class="about-card">
+          <div class="about-icon"><i class="bi bi-people"></i></div>
+          <h4>Comunidad</h4>
+          <p>Al ingresar te unes a una red de más de 600 egresados activos, mentores, eventos de networking y oportunidades laborales exclusivas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CURSOS -->
+<section id="cursos">
+  <div class="container">
+    <div class="text-center mb-5 fade-up">
+      <div class="section-tag">// Portafolio académico</div>
+      <h2 class="section-title">Nuestros <span class="accent">Cursos</span></h2>
+      <div class="divider-line mx-auto"></div>
+      <p class="section-sub mx-auto">Selecciona tu área y empieza hoy.</p>
+    </div>
+    <ul class="nav curso-tabs mb-5 justify-content-center gap-2 fade-up" id="cursoTabs" role="tablist">
+      <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#redes"><i class="bi bi-hdd-network me-1"></i> Redes</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#devweb"><i class="bi bi-code-slash me-1"></i> Desarrollo Web</button></li>
+    </ul>
+    <div class="tab-content">
+      <!-- REDES -->
+      <div class="tab-pane fade show active" id="redes">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="curso-card">
+              <div class="curso-img" style="background:linear-gradient(135deg,#050d1a,#091c35);">
+                <i class="bi bi-hdd-network" style="position:relative;z-index:1;color:var(--accent);font-size:3rem;"></i>
+              </div>
+              <div class="curso-body">
+                <h5>CCNA Fundamentos</h5>
+                <p>Domina los conceptos esenciales de redes Cisco: modelos OSI, TCP/IP, subnetting, VLANs y enrutamiento básico.</p>
+                <div class="curso-meta">
+                  <span class="tag-badge tag-basic">Básico</span>
+                  <span class="tag-badge tag-virtual">Virtual</span>
+                  <span class="tag-badge tag-hours">80h</span>
+                </div>
+              </div>
+              <div class="curso-footer">
+                <div class="precio">$350.000<br><small>COP / mes</small></div>
+                <a href="formulario.html?curso=CCNA+Fundamentos" class="btn-inscribir">Inscribirme</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="curso-card">
+              <div class="curso-img" style="background:linear-gradient(135deg,#07131a,#0a2030);">
+                <i class="bi bi-shield-lock" style="position:relative;z-index:1;color:var(--accent2);font-size:3rem;"></i>
+              </div>
+              <div class="curso-body">
+                <h5>Seguridad en Redes</h5>
+                <p>Firewalls, IDS/IPS, VPN, análisis de tráfico y respuesta ante incidentes. Fortalece la infraestructura de cualquier organización.</p>
+                <div class="curso-meta">
+                  <span class="tag-badge tag-mid">Intermedio</span>
+                  <span class="tag-badge tag-pres">Presencial</span>
+                  <span class="tag-badge tag-hours">100h</span>
+                </div>
+              </div>
+              <div class="curso-footer">
+                <div class="precio">$480.000<br><small>COP / mes</small></div>
+                <a href="formulario.html?curso=Seguridad+en+Redes" class="btn-inscribir">Inscribirme</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="curso-card">
+              <div class="curso-img" style="background:linear-gradient(135deg,#0d0714,#1a0a28);">
+                <i class="bi bi-cloud-fill" style="position:relative;z-index:1;color:var(--accent3);font-size:3rem;"></i>
+              </div>
+              <div class="curso-body">
+                <h5>Redes Cloud & AWS</h5>
+                <p>Arquitectura de redes en la nube, VPC, balanceadores de carga, Route 53 y preparación para AWS Cloud Practitioner.</p>
+                <div class="curso-meta">
+                  <span class="tag-badge tag-adv">Avanzado</span>
+                  <span class="tag-badge tag-virtual">Virtual</span>
+                  <span class="tag-badge tag-hours">120h</span>
+                </div>
+              </div>
+              <div class="curso-footer">
+                <div class="precio">$620.000<br><small>COP / mes</small></div>
+                <a href="formulario.html?curso=Redes+Cloud+AWS" class="btn-inscribir">Inscribirme</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- DESARROLLO WEB -->
+      <div class="tab-pane fade" id="devweb">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="curso-card">
+              <div class="curso-img" style="background:linear-gradient(135deg,#0a0e05,#0d1e08);">
+                <i class="bi bi-filetype-html" style="position:relative;z-index:1;color:#ff6b35;font-size:3rem;"></i>
+              </div>
+              <div class="curso-body">
+                <h5>HTML, CSS & Bootstrap</h5>
+                <p>Diseña sitios web modernos y responsivos desde cero. Aprende semántica HTML5, Flexbox, Grid y Bootstrap 5.</p>
+                <div class="curso-meta">
+                  <span class="tag-badge tag-basic">Básico</span>
+                  <span class="tag-badge tag-virtual">Virtual</span>
+                  <span class="tag-badge tag-hours">60h</span>
+                </div>
+              </div>
+              <div class="curso-footer">
+                <div class="precio">$280.000<br><small>COP / mes</small></div>
+                <a href="formulario.html?curso=HTML+CSS+Bootstrap" class="btn-inscribir">Inscribirme</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="curso-card">
+              <div class="curso-img" style="background:linear-gradient(135deg,#0e0e05,#1f1c06);">
+                <i class="bi bi-filetype-js" style="position:relative;z-index:1;color:#febc2e;font-size:3rem;"></i>
+              </div>
+              <div class="curso-body">
+                <h5>JavaScript & React</h5>
+                <p>De los fundamentos del lenguaje hasta componentes React modernos, hooks, estado global y consumo de APIs REST.</p>
+                <div class="curso-meta">
+                  <span class="tag-badge tag-mid">Intermedio</span>
+                  <span class="tag-badge tag-pres">Presencial</span>
+                  <span class="tag-badge tag-hours">110h</span>
+                </div>
+              </div>
+              <div class="curso-footer">
+                <div class="precio">$520.000<br><small>COP / mes</small></div>
+                <a href="formulario.html?curso=JavaScript+React" class="btn-inscribir">Inscribirme</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 fade-up">
+            <div class="curso-card">
+              <div class="curso-img" style="background:linear-gradient(135deg,#050b14,#0b1a2e);">
+                <i class="bi bi-server" style="position:relative;z-index:1;color:var(--accent);font-size:3rem;"></i>
+              </div>
+              <div class="curso-body">
+                <h5>Backend con Node.js</h5>
+                <p>Construye APIs RESTful robustas con Node, Express, JWT, MySQL/MongoDB y despliegue en la nube.</p>
+                <div class="curso-meta">
+                  <span class="tag-badge tag-adv">Avanzado</span>
+                  <span class="tag-badge tag-virtual">Virtual</span>
+                  <span class="tag-badge tag-hours">130h</span>
+                </div>
+              </div>
+              <div class="curso-footer">
+                <div class="precio">$650.000<br><small>COP / mes</small></div>
+                <a href="formulario.html?curso=Backend+NodeJS" class="btn-inscribir">Inscribirme</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section id="video-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5 fade-up">
+        <div class="section-tag">// En acción</div>
+        <h2 class="section-title">Aprende <span class="accent">haciendo</span></h2>
+        <div class="divider-line"></div>
+        <p style="color:var(--muted);font-size:.95rem;">
+          Nuestras clases son dinámicas, con laboratorios en tiempo real y proyectos que puedes mostrar en tu portafolio desde el primer módulo.
+        </p>
+        <div class="d-flex gap-3 mt-3 flex-wrap">
+          <span class="tag-badge tag-virtual" style="font-size:.75rem;padding:.3rem .8rem;"><i class="bi bi-camera-video me-1"></i> Sesiones en vivo</span>
+          <span class="tag-badge tag-pres" style="font-size:.75rem;padding:.3rem .8rem;"><i class="bi bi-archive me-1"></i> Grabaciones disponibles</span>
+        </div>
+      </div>
+      <div class="col-lg-7 fade-up">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/rJW4P2uDJE8" title="Intro NetMaster" height="380" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUÉ -->
+<section id="porque">
+  <div class="container">
+    <div class="text-center mb-5 fade-up">
+      <div class="section-tag">// Diferenciadores</div>
+      <h2 class="section-title">¿Por qué <span class="accent">NetMaster?</span></h2>
+      <div class="divider-line mx-auto"></div>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-6 fade-up">
+        <div class="why-item">
+          <div class="why-icon"><i class="bi bi-patch-check-fill"></i></div>
+          <div><h5>Instructores certificados</h5><p>Todos nuestros docentes tienen certificaciones vigentes (CCNA, AWS, Google Dev) y experiencia laboral activa.</p></div>
+        </div>
+      </div>
+      <div class="col-md-6 fade-up">
+        <div class="why-item">
+          <div class="why-icon"><i class="bi bi-graph-up-arrow"></i></div>
+          <div><h5>Enfoque en empleabilidad</h5><p>El 78% de nuestros egresados consiguen empleo tech antes de 3 meses. Preparamos CV, portafolio y LinkedIn.</p></div>
+        </div>
+      </div>
+      <div class="col-md-6 fade-up">
+        <div class="why-item">
+          <div class="why-icon"><i class="bi bi-clock-history"></i></div>
+          <div><h5>Horarios flexibles</h5><p>Grupos en mañana, tarde, noche y fines de semana. Aprende sin sacrificar tu trabajo o estudios actuales.</p></div>
+        </div>
+      </div>
+      <div class="col-md-6 fade-up">
+        <div class="why-item">
+          <div class="why-icon"><i class="bi bi-award-fill"></i></div>
+          <div><h5>Certificado con validez</h5><p>Certificado digital verificable y acceso a nuestra red de empresas aliadas con vacantes exclusivas.</p></div>
+        </div>
+      </div>
+      <div class="col-md-6 fade-up">
+        <div class="why-item">
+          <div class="why-icon"><i class="bi bi-chat-dots-fill"></i></div>
+          <div><h5>Acompañamiento post-curso</h5><p>Grupo de alumni activo, sesiones mensuales gratuitas y acceso de por vida al material del curso.</p></div>
+        </div>
+      </div>
+      <div class="col-md-6 fade-up">
+        <div class="why-item">
+          <div class="why-icon"><i class="bi bi-currency-dollar"></i></div>
+          <div><h5>Precios accesibles + financiación</h5><p>Tarifas transparentes, sin cargos ocultos. Financiación en cuotas mensuales sin intereses.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="text-center mb-5 fade-up">
+          <div class="section-tag">// Preguntas frecuentes</div>
+          <h2 class="section-title">Resolvemos tus <span class="accent">dudas</span></h2>
+          <div class="divider-line mx-auto"></div>
+        </div>
+        <div class="accordion fade-up" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">¿Necesito conocimientos previos?</button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Los niveles Básico no requieren experiencia previa. Para Intermedios y Avanzados recomendamos haber completado el nivel anterior o tener experiencia equivalente.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">¿Los cursos virtuales son en vivo o grabados?</button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Son en vivo con horario fijo. Todas las sesiones quedan grabadas en la plataforma por 12 meses para que puedas repasar cuando quieras.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">¿Cuál es la política de reembolso?</button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Garantía de 7 días: si no estás satisfecho con el primer módulo, te devolvemos el 100% de tu inversión sin preguntas.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">¿El certificado es reconocido por empresas?</button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Reconocido por más de 30 empresas aliadas en la región. Incluye QR de verificación para que reclutadores lo validen directamente.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">¿Puedo cambiar de horario durante el curso?</button>
+            </h2>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Sí, una vez por cohorte puedes solicitar cambio de grupo si hay cupo disponible. El proceso tarda máximo 48 horas hábiles.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA al formulario -->
+        <div class="text-center mt-5 fade-up">
+          <p style="color:var(--muted);margin-bottom:1.2rem;">¿Listo para empezar? Da el primer paso hoy.</p>
+          <a href="formulario.html" class="btn btn-primary-cta">
+            <i class="bi bi-send me-2"></i>Ir al formulario de inscripción
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="footer-brand">NET<span>MASTER</span> ACADEMY</div>
+        <p class="mt-3">Formando los profesionales tech que Colombia necesita. Con instrucción real, proyectos reales y resultados reales.</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-2 offset-lg-1">
+        <div class="footer-heading">Cursos</div>
+        <a href="#cursos" class="footer-link">CCNA Fundamentos</a>
+        <a href="#cursos" class="footer-link">Seguridad en Redes</a>
+        <a href="#cursos" class="footer-link">Redes Cloud & AWS</a>
+        <a href="#cursos" class="footer-link">HTML, CSS & Bootstrap</a>
+        <a href="#cursos" class="footer-link">JavaScript & React</a>
+        <a href="#cursos" class="footer-link">Backend con Node.js</a>
+      </div>
+      <div class="col-sm-6 col-lg-2">
+        <div class="footer-heading">Empresa</div>
+        <a href="#nosotros" class="footer-link">Quiénes somos</a>
+        <a href="#porque" class="footer-link">Por qué elegirnos</a>
+        <a href="#faq" class="footer-link">FAQ</a>
+        <a href="formulario.html" class="footer-link">Inscribirme</a>
+      </div>
+      <div class="col-lg-3">
+        <div class="footer-heading">Contacto</div>
+        <p style="font-size:.85rem;">
+          <i class="bi bi-envelope me-2" style="color:var(--accent)"></i>info@netmasteracademy.co<br>
+          <i class="bi bi-telephone me-2" style="color:var(--accent)"></i>+57 304 2070120<br>
+          <i class="bi bi-geo-alt me-2" style="color:var(--accent)"></i>Monteria, Cordoba — Colombia<br>
+          <i class="bi bi-clock me-2" style="color:var(--accent)"></i>Lun–Vie: 8am – 8pm
+        </p>
+        <span class="badge rounded-pill" style="background:rgba(0,245,200,.1);color:var(--accent);border:1px solid var(--border);font-family:var(--font-mono);font-size:.7rem;">
+          <i class="bi bi-circle-fill me-1" style="font-size:.4rem;color:#28c840"></i>Inscripciones abiertas
+        </span>
+      </div>
+    </div>
+    <div class="footer-copy d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <span>© 2025 NetMaster Academy. Todos los derechos reservados.</span>
+      <span class="mono" style="font-size:.75rem;color:var(--muted)">v2.0 — build 2025</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
